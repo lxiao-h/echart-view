@@ -57,11 +57,14 @@ docs/
 
 ## 部署到 GitHub Pages
 
-站点默认按根路径构建。若要部署到 `https://<用户名>.github.io/echart-view/`，需要打开 `docs/.vitepress/config.mts` 里这一行：
+已配置完成，推送到 `main` 分支即自动构建并部署：
 
-```ts
-base: '/echart-view/',
-```
+- `docs/.vitepress/config.mts` 中已设 `base: '/echart-view/'`（子路径部署必需）
+- `.github/workflows/deploy.yml` 负责构建与发布
+
+**首次需要手动开一次**：进入仓库 `Settings → Pages`，把 `Build and deployment → Source` 选成 **GitHub Actions**。
+
+之后访问 `https://lxiao-h.github.io/echart-view/`，每次 push 到 `main` 都会自动更新。
 
 ## 说明
 

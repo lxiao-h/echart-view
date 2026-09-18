@@ -6,8 +6,8 @@ export default defineConfig({
   title: '读书笔记',
   description: '把读过的书，拆成能用的东西。',
 
-  // 部署到 GitHub Pages 子路径时打开这行（路径 = 仓库名）
-  // base: '/echart-view/',
+  // 部署在 GitHub Pages 子路径，路径 = 仓库名
+  base: '/echart-view/',
 
   cleanUrls: true,
   lastUpdated: true,
